@@ -1,0 +1,5 @@
+<svg width="9" height="151" viewBox="0 0 9 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4.5" cy="4.5" r="4" transform="rotate(90 4.5 4.5)" stroke="#D7D6D6"/>
+<circle cx="4.5" cy="146.5" r="4" transform="rotate(90 4.5 146.5)" stroke="#D7D6D6"/>
+<line x1="4.5" y1="12" x2="4.49999" y2="139" stroke="#D7D6D6" stroke-dasharray="2 2"/>
+</svg>
