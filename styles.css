@@ -234,15 +234,15 @@ header {
     top: 83.19px;
     left: 0;
     flex-direction: column;
-    /* gap: 24px; */
-    justify-content: space-between;
+    gap: 24px;
+    /* justify-content: space-between; */
     background-color: #fff;
     border-top: 1px solid;
     border-color: #EAECF0;
     height: 98vh;
-    padding: 32px 24px;
+    padding: 24px;
     transform: translateX(100%);
-    transition: transform 3s ease;
+    transition: transform 0.3s ease;
   }
 
   .menu.open {
@@ -265,7 +265,7 @@ header {
  .navbar-links {
   list-style: none;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   /* justify-content: space-between; */
   width: 100%;
   font-size: 20px;

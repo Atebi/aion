@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
   const navLinks = document.querySelectorAll(".nav-link");
   // console.log("navlinks: ", navLinks);
+  const navButton = document.querySelector(".navbar-primary-button");
 
   function toggleMenu() {
     menu.classList.toggle("open");
@@ -13,6 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
       menu.classList.remove("close");
       body.style.overflow = "hidden";
       menuIcon.innerHTML = "&#10005;";
+      navButton.style.display = "none";
       // menu.style.display = "flex";
       // setTimeout(() => {
       //   menu.style.display = "flex";
@@ -22,6 +24,7 @@ window.addEventListener("DOMContentLoaded", function () {
       menu.classList.remove("open");
       body.style.overflow = "auto";
       menuIcon.innerHTML = "&#9776;";
+      navButton.style.display = "block";
       // setTimeout(() => {
       //   // menu.style.display = "none";
       // }, 3000);
@@ -31,9 +34,10 @@ window.addEventListener("DOMContentLoaded", function () {
   function closeMenu() {
     menu.classList.add("close");
     menu.classList.remove("open");
-    menu.style.display = "none";
+    // menu.style.display = "none";
     body.style.overflow = "auto";
     menuIcon.innerHTML = "&#9776;";
+    navButton.style.display = "block";
   }
 
   menuIcon.addEventListener("click", toggleMenu);
